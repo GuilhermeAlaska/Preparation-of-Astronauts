@@ -1,0 +1,83 @@
+<!-- Input hidden
+    <input type="hidden" name="timestamp" id="timestamp" value="1286705410">
+
+    Invisível ao usuário
+    Será enviado com o formulário
+    Não receberá foco
+    leitores de tela não percebem este campo
+ -->
+
+ <!-- Input radio
+    <input type="radio">
+
+    Projetado para selecionar uma única opção de um grupo de opções
+
+    Atributos essenciais
+
+    checked
+        indica que o campo foi marcado
+    
+    value
+        valor que aquele campo contém
+
+-->
+<!-- 
+<fieldset>
+    <legend>Bora tomar um café?</legend>
+
+    <label for="yep">Sim</label>
+    <input type="radio" id="yep" name="coffee" value="yes">
+    
+    <label for="nono">Não</label>
+    <input checked type="radio" id="nono" name="coffee" value="no">
+</fieldset> -->
+
+
+
+<!-- Input textarea
+    <textarea>
+        mais de uma linha
+        útil para textos grandes
+
+    Atributos
+    id
+    name
+    rows e cols
+
+    maxlength e minlength
+    wrap // não formata o texto indo linha abaixo, surge uma barra
+
+    .. outros comuns aos <input>s
+        - autocomplete, autofocus, disabled, placeholder, readonly, form, requires
+-->
+<!-- 
+<label for="message">Mensagem</label>
+<textarea name="message" id="message" cols="20" rows="0" wrap="off"></textarea> -->
+
+
+
+<!-- Input select
+    <select>
+        Controle que fornece um menu de opções
+
+    <option>
+
+    Contém as opções a serem selecionadas
+    Atributos necessários
+        value
+
+    Atributos únicos
+        multiple
+            Habilita múltiplas opções
+
+        size 
+            Quantas opções visíveis?
+-->
+<label for="carselect">Qual o modelo do carro?</label>
+<br>
+<select name="carmodel" id="carselect" multiple size="4">
+    <option value="">Selecione o modelo</option>
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+    <option value="bmw">X6</option>
+</select>
